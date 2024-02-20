@@ -1,0 +1,13 @@
+.addressDetails{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+
+    .detail{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: flex-start;
+    }           
+  
+}

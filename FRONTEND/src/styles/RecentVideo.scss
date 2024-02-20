@@ -1,0 +1,37 @@
+.videos{
+    display: flex;
+    flex-direction: column;
+    .User{
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        padding: 10px;
+        .Avat{
+            border-radius: 50%;
+        }
+
+        .Userdetails{
+            
+            p{
+                margin-bottom: 1px;
+                font-weight: bold;
+            }
+
+        }
+    }
+    .activdescript{
+        margin-bottom: 1px;
+    }
+    .videosPosted{        
+        margin-top: 1px;
+        align-items: center;     
+        
+        img{            
+            margin-top: 1rem;
+            width: 100%;
+            
+                                                
+        }                        
+    }
+
+}

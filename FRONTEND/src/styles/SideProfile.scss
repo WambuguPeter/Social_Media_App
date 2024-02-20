@@ -1,0 +1,14 @@
+.side-profile{
+    display: flex;
+    align-items: center;
+    .avat{
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+
+    .side-profile-text{    
+       flex-direction: row;
+      
+    }
+ }

@@ -1,0 +1,25 @@
+.VideosItems{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-left: 10px;
+}
+.Videos{
+    background-color: rgb(243, 222, 222);
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 70vh;
+    justify-content: center;
+    
+    .Music{
+        display: flex;
+        gap: 7rem;
+        align-items: center;
+        img{
+            height: 40px;
+            
+
+        }
+    }
+}

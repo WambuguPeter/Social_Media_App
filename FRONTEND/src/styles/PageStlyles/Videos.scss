@@ -1,0 +1,51 @@
+.VideosPage{
+    height: 90vh;
+    width: 150vh;
+    background-color:rgb(235, 246, 255);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: flex;    
+    flex-direction: column;
+    margin-left: 10px;
+    .navbar{        
+        padding: 30px;
+        gap: 20vh;
+        height: 0px;
+        align-items: center;
+        justify-content: space-between;
+
+        .rightSide{
+            display: flex;
+            align-items: center;
+            button{
+                color: #fff;
+                background-color: blue;
+                width: 120%;
+                height: 50%;
+                margin-right: 10px;
+                border-radius: 15px;
+            }
+            
+        }
+    }
+    .Categories{
+        display: flex;
+        justify-content: space-between;
+       
+        button{
+            color: blue;
+            margin-right: 20px;
+        }
+    }
+    .VideosItems{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:425px) {
+    .VideosPage{
+        background-color: red;
+        margin: 0;
+        width: 57%;
+    }
+}

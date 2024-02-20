@@ -1,0 +1,29 @@
+.PhotosPage{
+    height: 90vh;
+    width: 150vh;
+    background-color: rgb(219, 243, 224);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-wrap: wrap;
+    .headers{
+        display: flex;
+        gap: 2rem;
+        span{            
+            font-size: 20px;
+        }
+    }
+    .total{
+        h4{
+            margin-bottom: 0.5px;
+        }
+        span{            
+            font-size: 14px;
+        }
+    }
+    .list{
+        img{
+            padding: 10px;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.RegisterPage {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    background-image: url(/src/assets/bcg1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  .register-card {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;    
+  }
+  
+  .register-card h1 {
+    margin-bottom: 20px;
+  }
+  
+  .register-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-card input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .register-card button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .register-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  .register-card span {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .register-card span:hover {
+    text-decoration: underline;
+  }
+  
+@media (max-width: 768px) {
+  .register-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .RegisterPage{
+    width: auto;
+  }
+  .register-card {
+    width: 90%;
+  }
+}
+
+
+
+
+

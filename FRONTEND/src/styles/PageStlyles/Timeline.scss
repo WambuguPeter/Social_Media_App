@@ -1,0 +1,60 @@
+.Timeline-page{
+
+  display: flex;
+  height: 90vh;
+  width: 150vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: aliceblue;
+  .users{
+    display: flex;
+    margin-left: 10px;
+    gap: 1rem;
+    width: 150vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    
+    .user{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+      
+  // .avatar {
+  //   width: 50px;
+  //   height: 50px;
+  //   border-radius: 50%;
+  //   margin-right: 10px;
+  //   margin-bottom: 10px;
+  //   background-size: cover;
+  //   background-position: center;
+  // }
+  
+  // .user-avatar {
+  //   border: 2px solid #333; 
+  // }
+  
+  // .avatar.has-post {
+  //   border: 2px solid blue; 
+  // }
+      
+}
+@media screen and (max-width:425px) {
+  .Timeline-page{
+    .MainBottomRight{
+      width: 55%;
+      background-color: red;
+    }
+    .users{
+      height: 15%;
+      .user{
+        height: 100%;
+        img{
+          height: 70%;
+        }
+      }
+    }
+  }
+}

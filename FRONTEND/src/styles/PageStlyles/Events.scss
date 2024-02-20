@@ -1,0 +1,122 @@
+.EventsPage{
+    height: 90vh;
+    width: 150vh;
+    background-color: rgb(252, 243, 236);
+    overflow: scroll;
+    scroll-behavior: smooth;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    
+    .header{
+        display: flex;
+        justify-content: space-between;
+        .leftSide{
+            display: flex;            
+            gap: 2rem;
+            span{
+                font-size: 16px;
+                
+            }
+        }
+        .rightSide{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .list{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 10px;        
+        justify-content: space-evenly;
+        .eventCard{
+            display: flex;
+            flex-direction: column;
+            width: 45%;            
+
+            .eventDetail{               
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                .eventName{
+                    h4{
+                        margin-bottom: 1px;
+                    }
+                }
+                .date{   
+                    display: flex;                 
+                    align-items: center;
+                    span{
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .people{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .location{
+                display: flex;
+                margin: 15px;                
+                align-items: center;
+            }
+            .Register-btn{
+                display: flex;
+                justify-content: center;
+                color: blue;
+                font-size: 16px;
+                font-weight: bold;
+                border: none;
+                margin-bottom: 35px;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:425px) {
+   .EventsPage{
+    width: 100%;
+    background-color: red;
+        h2{font-size: 18px;}
+        .header{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .leftSide{
+                display: flex;
+                border: 1px solid;
+                gap: 3rem;
+                // overflow: scroll;
+                // scroll-behavior: smooth;
+                align-self: center;
+                // width: 100%;
+
+                span{ 
+                    font-size: 14px;
+                    width: 100%;                 
+                    
+                }
+            }
+        }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .eventCard{
+            background-color: rgb(101, 247, 198);
+            display: flex;
+            flex-direction: column;
+            width: 98%;
+            
+        }
+    }
+
+   } 
+}

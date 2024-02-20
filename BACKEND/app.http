@@ -1,0 +1,175 @@
+### 
+GET http://localhost:9000/health
+
+
+# ----------------- User ------------
+
+### getting all user
+GET http://localhost:9000/api/users/getUser
+
+### getting a User By ID
+GET http://localhost:9000/api/users/getUserByID/7
+
+### Register a user.
+POST http://localhost:9000/api/users/register
+Content-Type: application/json
+
+{
+    "Username": "Emmanuel",
+    "Email": "wameco5577@ebuthor.com",
+    "Password": "123456",
+    "TagName": "@Emmanuel",
+    "Location": "Eldoret"
+    
+}
+
+### Log in
+POST http://localhost:9000/api/users/auth/login
+Content-Type: application/json
+
+{    
+    "Email": "peter@gmail.com",
+    "Password": "123456"  
+}
+
+### delete a User By ID
+DELETE  http://localhost:9000/api/users/deleteUser/78
+
+### update a User 
+PUT http://localhost:9000/api/users/updateUser/5
+Content-Type: application/json
+
+{ 
+    "Username": "Kennedy",
+    "Email": "Khaldrogo@dothraki.com",
+    "Password": "khaldrogo00",
+    "TagName": "FatherOfDragons",
+    "Location": "Nyeri"
+}
+
+
+# ------------------ Group -------------
+
+### getting  All groups.
+GET http://localhost:9000/api/groups/getAllGroups
+
+### getting groups by Id.
+GET http://localhost:9000/api/groups/getGroupByID/2
+
+
+
+# ------------- Messages---------
+
+### getting  All Messages.
+GET http://localhost:9000/api/messages/getAllMessages
+
+### getting Message By ID.
+GET http://localhost:9000/api/messages/getMessageByID/3
+
+### create New Message.
+POST http://localhost:9000/api/messages/createNewMessage
+Content-Type: application/json
+
+{
+    "SenderID": 1,
+    "ReceiverID": 3,
+    "MessageDate": "2024-02-18T12:00:00Z",
+    "Content": "Hello, this is a test message."
+}
+
+### deleting Message By ID.
+DELETE http://localhost:9000/api/messages/deleteMessageByID/10
+
+
+# ------------- Photo --------
+
+
+### getting  All Photos.
+GET http://localhost:9000/api/photos/getAllPhotos
+
+### getting Photos by id.
+GET http://localhost:9000/api/photos/getPhotosByID/3
+
+
+# ---------- Event ---------
+
+### getting  All Events.
+GET http://localhost:9000/api/events/getAllEvents
+
+### getting Events By ID.
+GET http://localhost:9000/api/events/getEventsByID/1
+
+
+
+# ---------- Friendships ---------
+
+
+### getting  All Friendships.
+GET http://localhost:9000/api/friendship/getAllfriendships
+
+### getting Friendships by ID.
+GET http://localhost:9000/api/friendship/getfriendshipByID/1
+
+
+
+# ---------------- GroupMembers ----------
+
+### getting  All GoupMembers.
+GET http://localhost:9000/api/groupMembers/getAllGroupMembers
+
+### getting GoupMember by id.
+GET http://localhost:9000/api/groupMembers/getGroupMembersByID/1
+
+
+
+# ---------------- Post ----------
+
+
+### getting  All Post.
+GET http://localhost:9000/api/post/getAllPosts
+
+### getting Post by ID.
+GET http://localhost:9000/api/post/getPostByID/4
+
+
+### adding a Post.
+POST http://localhost:9000/api/post/addPost
+Content-Type: application/json
+
+{
+    "UserID": "3" ,
+    "Content": "What has been trending" ,
+    "Likes": "100",
+    "Comments": 55
+}
+
+
+### delete Post by ID.
+GET http://localhost:9000/api/post/DeletePost
+
+
+
+# ---------------- comments----------
+
+
+### getting  All comments.
+GET http://localhost:9000/api/comments/getAllCommits
+
+### getting comment By ID.
+GET http://localhost:9000/api/comments/getCommitByID/1
+
+
+
+
+# ---------------- EventAttendes----------
+
+### getting  All EventAttendes.
+GET http://localhost:9000/api/events/getAllEventAttendees
+
+### getting EventAttendee by id.
+GET http://localhost:9000/api/events/getEventAttendeesByID/3
+
+
+
+### sending mail.
+GET http://localhost:9000/send-mail

@@ -1,0 +1,36 @@
+.left-main-buttom{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    // flex: 0.1;                
+    padding: 10px;
+    border-radius: 10px;                
+    padding-top: 0;
+    background-color: rgb(219, 232, 243);
+    
+    .headers{
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        p{
+            color: blue;
+        }
+    }
+    .imgs{
+        display: flex;           
+        gap: 0.5rem;
+        width: 100%;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        img{
+            width: 130px;
+            height: 100px;
+        }
+    }
+}
+@media screen and (max-width:425px) {
+    .left-main-buttom{
+        width: 100%;
+
+    }
+}

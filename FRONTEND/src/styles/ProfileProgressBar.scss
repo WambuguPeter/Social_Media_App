@@ -1,0 +1,12 @@
+.progress{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0;
+    background-color: #ececec;
+    border-radius: 10px;
+
+    progress{
+        width: 80%;
+    }
+}

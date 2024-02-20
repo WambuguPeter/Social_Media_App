@@ -1,0 +1,101 @@
+// .Menu {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 15px;
+//   margin-left: 10px;
+
+//   .menu-link {
+//     text-decoration: none;
+//   }
+
+//   .menu-link.active {
+//     display: flex;
+//     align-items: center;
+//     color: blue;
+//     font-weight: bold;
+//     border-left: 2px solid blue;
+//     border-radius: 5px;
+//   }
+
+//   .menu-left {
+//     align-items: center;
+//     display: flex;
+//     gap: 1.5rem;
+
+//     .menu-title {
+//       margin: 0;
+//       text-decoration: none;
+
+//       &:hover {
+//         color: blue;
+//       }
+//     }
+
+//     img {
+//       width: 25px;
+//     }
+
+//     .badge {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       color: aliceblue;
+//       background-color: rgb(230, 57, 137);
+//       width: 25px;
+//       height: 25px;
+//       border-radius: 45%;
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 10px;  
+    .menu-link{
+      text-decoration: none;
+    }  
+    
+    .active{
+      display: flex;
+      align-items: center;
+      color: blue;
+      font-weight: bold;
+      border-left: 2px solid blue;      
+      }
+
+     
+    .menu-left {
+      align-items: center;
+      display: flex;      
+      gap: 1.5rem;
+      .titles{
+        margin: 0px 0px;
+        text-decoration: none;        
+      }
+      .titles:hover{
+        color: blue;
+      }
+      img {
+        width: 25px;
+      }
+      span{
+        display: flex;
+        
+        justify-content: center;
+        color: aliceblue;
+        align-items: center;
+        background-color: rgb(230, 57, 137);
+        width: 25px;
+        height: 25px;
+        border-radius: 45%;
+        margin-right: 0px;
+        
+      }
+    }
+  }
+  
